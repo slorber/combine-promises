@@ -1,8 +1,11 @@
 {
+  "name": "combine-promises",
+  "author": "slorber",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "module": "dist/combine-promises.esm.js",
   "files": [
     "dist",
     "src"
@@ -31,17 +34,14 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "combine-promises",
-  "author": "slorber",
-  "module": "dist/combine-promises.esm.js",
   "size-limit": [
     {
       "path": "dist/combine-promises.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "150 B"
     },
     {
       "path": "dist/combine-promises.esm.js",
-      "limit": "10 KB"
+      "limit": "150 B"
     }
   ],
   "devDependencies": {
