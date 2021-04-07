@@ -81,11 +81,12 @@ You can easily do that:
 
 ```js
 import combinePromises from 'combine-promises';
-import { mapValues } from 'lodash';
 
 const friendsIds = { user1: 'userId-1', user2: 'userId-2' };
 
-const friends = await combinePromises(mapValues(friendsIds, fetchUserById));
+const friends = await combinePromises(
+  Object.fromEntries(Object.entries(friendsIds).map(([key, id]) => [key, fetchUserById(id)]))
+);
 ```
 
 Without this library: good luck to keep your code simple.
