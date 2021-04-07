@@ -8,7 +8,7 @@ type Result<Obj extends Input> = {
   [P in keyof Obj]: UnwrapPromise<Obj[P]>;
 };
 
-export default async function combinePromises<Obj extends Input>(
+export default function combinePromises<Obj extends Input>(
   obj: Obj
 ): Promise<Result<Obj>> {
   if (obj === null) {
@@ -21,11 +21,13 @@ export default async function combinePromises<Obj extends Input>(
   }
 
   const keys = Object.keys(obj);
-  const values = await Promise.all(Object.values(obj));
 
-  const result: any = {};
-  values.forEach((v, i) => {
-    result[keys[i]] = v;
+  // not using async/await on purpose, otherwise lib outputs large _asyncToGenerator code in dist
+  return Promise.all(Object.values(obj)).then(values => {
+    const result: any = {};
+    values.forEach((v, i) => {
+      result[keys[i]] = v;
+    });
+    return result;
   });
-  return result;
 }
