@@ -5,7 +5,7 @@
 ![Size min](https://img.shields.io/bundlephobia/min/combine-promises.svg)
 ![Size minzip](https://img.shields.io/bundlephobia/minzip/combine-promises.svg)
 
-Like `Promise.all([])` but with an object.
+Like `Promise.all([])` but for objects.
 
 ```ts
 import combinePromises from 'combine-promises';
