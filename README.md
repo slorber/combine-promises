@@ -5,7 +5,7 @@
 ![Size min](https://img.shields.io/bundlephobia/min/combine-promises.svg)
 ![Size minzip](https://img.shields.io/bundlephobia/minzip/combine-promises.svg)
 
-  Like Promise.all(array) but with an object.
+Like Promise.all(array) but with an object.
 
 ```ts
 import combinePromises from 'combine-promises';
@@ -28,6 +28,14 @@ Features:
 - Feature complete
 - Well-tested
 - ESM / CJS
+
+## Install
+
+```
+npm install combine-promises
+// OR
+yarn add combine-promises
+```
 
 ## TypeScript support
 
