@@ -12,11 +12,15 @@ export default function combinePromises<Obj extends Input>(
   obj: Obj
 ): Promise<Result<Obj>> {
   if (obj === null) {
-    throw new Error('combinePromises does not handle null argument');
+    return Promise.reject(
+      new Error('combinePromises does not handle null argument')
+    );
   }
   if (typeof obj !== 'object') {
-    throw new Error(
-      `combinePromises does not handle argument of type ${typeof obj}`
+    return Promise.reject(
+      new Error(
+        `combinePromises does not handle argument of type ${typeof obj}`
+      )
     );
   }
 
