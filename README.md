@@ -5,7 +5,7 @@
 ![Size min](https://img.shields.io/bundlephobia/min/combine-promises.svg)
 ![Size minzip](https://img.shields.io/bundlephobia/minzip/combine-promises.svg)
 
-Like Promise.all(array) but with an object.
+Like `Promise.all([])` but with an object.
 
 ```ts
 import combinePromises from 'combine-promises';
@@ -18,7 +18,7 @@ const { user, company } = await combinePromises({
 
 Why:
 
-- Insensitive to destructuring order typos
+- Insensitive to destructuring order
 - Simpler async functional code
 
 Features:
