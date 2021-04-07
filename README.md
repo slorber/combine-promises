@@ -61,7 +61,7 @@ A common error with `Promise.all` is to have a typo in the destructuring order.
 const [company, user] = await Promise.all([fetchUser(), fetchCompany()]);
 ```
 
-This code becomes particularly dangerous as size of the array promise grows over time.
+This becomes more dangerous as size of the promises array grows.
 
 With `combinePromises`, you are using explicit names instead of array indices, which makes the code more robust and not sensitive to destructuring order:
 
