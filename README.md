@@ -1,6 +1,7 @@
 # Combine-Promises
 
 [![NPM](https://img.shields.io/npm/dm/combine-promises.svg)](https://www.npmjs.com/package/combine-promises)
+[![CI](https://github.com/slorber/combine-promises/actions/workflows/main.yml/badge.svg)](https://github.com/slorber/combine-promises/actions/workflows/main.yml)
 ![Size min](https://img.shields.io/bundlephobia/min/combine-promises.svg)
 ![Size minzip](https://img.shields.io/bundlephobia/minzip/combine-promises.svg)
 
