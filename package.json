@@ -13,6 +13,10 @@
   "engines": {
     "node": ">=10"
   },
+  "repository": {	
+    "type": "git",
+    "url": "https://github.com/slorber/combine-promises.git"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
