@@ -29,6 +29,16 @@ Features:
 - Well-tested
 - ESM / CJS
 
+--- 
+
+# Sponsor
+
+**[ThisWeekInReact.com](https://thisweekinreact.com)**: the best newsletter to stay up-to-date with the React ecosystem:
+
+[![ThisWeekInReact.com banner](https://user-images.githubusercontent.com/749374/136185889-ebdb67cd-ec78-4655-b88b-79a6c134acd2.png)](https://thisweekinreact.com)
+
+---
+
 ## Install
 
 ```
