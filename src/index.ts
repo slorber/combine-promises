@@ -1,8 +1,8 @@
-type UnwrapPromise<P extends Promise<unknown>> = P extends PromiseLike<infer V>
+type UnwrapPromise<P extends unknown> = P extends PromiseLike<infer V>
   ? V
-  : never;
+  : P;
 
-type Input = Record<string | number | symbol, Promise<unknown>>;
+type Input = Record<string | number | symbol, unknown>;
 
 type Result<Obj extends Input> = {
   [P in keyof Obj]: UnwrapPromise<Obj[P]>;
