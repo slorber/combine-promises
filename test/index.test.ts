@@ -47,11 +47,9 @@ describe('combinePromises', () => {
     expect(result).toEqual({ user: createUser(1), company: createCompany(2) });
   });
 
-  it('can handle sync values, but TS errors', async () => {
-    // @ts-expect-error: "company" value should be async/Promise
+  it('can handle sync values', async () => {
     const result: { user: User; company: Company } = await combinePromises({
       user: fetchUser(1),
-      // @ts-expect-error: "company" value should be async/Promise
       company: createCompany(2),
     });
     expect(result).toEqual({ user: createUser(1), company: createCompany(2) });
