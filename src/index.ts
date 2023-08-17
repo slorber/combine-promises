@@ -1,6 +1,4 @@
-type UnwrapPromise<P extends unknown> = P extends PromiseLike<infer V>
-  ? V
-  : P;
+type UnwrapPromise<P extends unknown> = P extends PromiseLike<infer V> ? V : P;
 
 type Input = Record<string | number | symbol, unknown>;
 
